@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background: url('./OIP 2.webp') no-repeat center/cover;
+}
+
+/* Overlay */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar .nav-link span {
+    margin-left: 10px;
+}
+
+.sidebar.collapsed .nav-link span {
+    display: none;
+}
+
+/* Content (FIXED) */
+.content {
+    margin-left: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+}
+
+/* collapsed state */
+.content.collapsed {
+    margin-left: 80px;
+}
+
+/* Containers */
+.container,
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
+
+/* Table */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table td,
+.table th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* logo */
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
