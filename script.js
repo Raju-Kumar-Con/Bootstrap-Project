@@ -7,7 +7,7 @@ document.getElementById("toggleSidebar").onclick = function () {
 // Generate table data
 let tableBody = document.getElementById("tableBody");
 
-for (let i = 1; i <= 60; i++) {
+for (let i = 1; i <= 10; i++) {
     let row = `
     <tr>
         <td>${i}</td>
