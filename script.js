@@ -22,7 +22,7 @@ toggleBtn.onclick = function () {
 function generateTableData() {
     let rows = "";
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 60; i++) {
         rows += `
 <tr>
     <td data-bs-toggle="tooltip" data-bs-title="${i}">${i}</td>
